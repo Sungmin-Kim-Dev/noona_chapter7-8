@@ -2,6 +2,11 @@
   color: chocolate;
   border-color: chocolate;
 }
+.btn-outline-success:hover {
+  background-color: chocolate;
+  color: white;
+  border-color: chocolate;
+}
 
 .card:hover {
   transform: scale(1.05);
@@ -10,4 +15,59 @@
 
 a {
   text-decoration: none;
+}
+
+.navbar-nav {
+  column-gap: 0.4rem;
+}
+
+@media (min-width: 576px) {
+  .card-section {
+    row-gap: 1rem;
+  }
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+footer a {
+  color: white;
+  &:hover {
+    color: grey;
+  }
+}
+.ft-top,
+.ft-middle {
+  border-bottom: 1px solid #392d23;
+}
+
+.col {
+  padding-bottom: 1rem;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .ft-top {
+    text-align: center;
+  }
+  .flag {
+    display: none;
+  }
+  .ft-middle {
+    padding-inline: 2rem;
+    row-gap: 2rem;
+  }
+  .ft-middle .col {
+    flex-basis: 25%;
+    text-align: center;
+  }
+  .mobile-footer {
+    display: block;
+  }
 }
